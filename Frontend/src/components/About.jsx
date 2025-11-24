@@ -4,7 +4,7 @@ import me from "../assets/me.jpg";
 const About = () => {
   return (
     <div
-      className="w-full flex items-center justify-center mt-15 gap-5"
+      className="w-full flex items-center justify-center mt-10 gap-5"
       id="about"
     >
       <div className="w-[80%] lg:max-w-7xl mx-auto flex flex-1 flex-col justify-center items-center gap-5">

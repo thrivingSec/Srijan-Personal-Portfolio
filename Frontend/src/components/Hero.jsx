@@ -4,7 +4,7 @@ import profileImg from "../assets/profileImg.jpg";
 const Hero = () => {
   return (
     <div
-      className="w-full flex items-center justify-center mt-15 overflow-hidden"
+      className="w-full flex items-center justify-center mt-15 overflow-hidden mb-5"
       id="home"
     >
       <div className="w-[80%] lg:max-w-7xl mx-auto flex flex-1 flex-col items-center justify-center gap-5">
@@ -21,9 +21,9 @@ const Hero = () => {
           I’m a MERN Stack Developer focused on building modern, real-time web
           applications with clean and scalable architectures
         </p>
-        <div className="lg:flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <a
-            className="mt-2 px-5 py-3 border-2 border-purple-600 hover:border-0 hover:bg-linear-to-r  hover:from-[#1717be] hover:to-[#b910b9] rounded-full text-white text-lg transition-all duration-500 cursor-pointer"
+            className="mt-2 mb-2 px-5 py-3 border-2 border-purple-600 hover:border-0 hover:bg-linear-to-r  hover:from-[#1717be] hover:to-[#b910b9] rounded-full text-white text-lg transition-all duration-500 cursor-pointer"
             href="https://drive.google.com/file/d/1YxhrUYeiHoAf6yRxCqHmXK59VbiGzwVj/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
