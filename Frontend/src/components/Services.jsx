@@ -56,7 +56,7 @@ const ServicesSection = () => {
     >
       <div className="w-[80%] lg:max-w-5xl mx-auto flex flex-col items-center gap-12">
         {/* Heading */}
-        <h2 className="text-5xl lg:text-6xl font-semibold text-white text-center">
+        <h2 className="text-4xl lg:text-6xl font-semibold text-white text-center">
           Services
         </h2>
 

@@ -9,7 +9,7 @@ const Projects = () => {
       className="w-full flex flex-col items-center justify-center mt-20 overflow-hidden "
       id="projects"
     >
-      <h1 className="text-6xl text-white font-medium text-center">
+      <h1 className="text-4xl lg:text-6xl text-white font-medium text-center">
         Major Projects
       </h1>
       <div className="w-[80%] lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center mt-15 gap-10">

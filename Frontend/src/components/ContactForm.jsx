@@ -29,7 +29,7 @@ const ContactForm = () => {
       className="w-full flex flex-col items-center justify-center mt-10 overflow-hidden mb-10"
       id="contact"
     >
-      <h1 className="text-6xl text-white font-medium text-center">
+      <h1 className="text-4xl lg:text-6xl text-white font-medium text-center">
         Get In Touch
       </h1>
       <div className="w-[80%] lg:max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-start justify-center mt-15 gap-10">

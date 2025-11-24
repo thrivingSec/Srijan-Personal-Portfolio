@@ -8,7 +8,7 @@ const About = () => {
       id="about"
     >
       <div className="w-[80%] lg:max-w-7xl mx-auto flex flex-1 flex-col justify-center items-center gap-5">
-        <h1 className="text-6xl text-white font-medium text-center">
+        <h1 className="text-4xl lg:text-6xl text-white font-medium text-center">
           About Me
         </h1>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-15 mt-5 lg:px-25">
