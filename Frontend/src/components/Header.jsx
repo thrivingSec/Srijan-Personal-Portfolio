@@ -32,7 +32,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col items-start justify-start text-white gap-3">
               <a
-                className=" text-xl font-medium cursor-pointer ml-2"
+                className="text-xl font-medium cursor-pointer ml-2"
                 href="#home"
                 onClick={(e) => setHamBurger(true)}
               >
@@ -51,6 +51,13 @@ const Header = () => {
                 onClick={(e) => setHamBurger(true)}
               >
                 Projects
+              </a>
+              <a
+                className=" text-xl font-medium cursor-pointer ml-2"
+                href="#services"
+                onClick={(e) => setHamBurger(true)}
+              >
+                Services
               </a>
 
               <a
@@ -82,6 +89,12 @@ const Header = () => {
             href="#projects"
           >
             Projects
+          </a>
+          <a
+            className="text-white text-md font-medium cursor-pointer"
+            href="#services"
+          >
+            Services
           </a>
         </nav>
         {/* connect */}
