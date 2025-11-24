@@ -14,7 +14,7 @@ const Projects = () => {
       </h1>
       <div className="w-[80%] lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center mt-15 gap-10">
         {/* left */}
-        <div className="w-[80%] lg:w-[40%] border-2 border-purple-600 rounded-md p-2 flex flex-col justify-start items-start gap-5 hover:scale-105 transition-all duration-500 mb-10">
+        <div className="w-[90%] lg:w-[40%] border-2 border-purple-600 rounded-md p-2 flex flex-col justify-start items-start gap-5 hover:scale-105 transition-all duration-500 mb-10">
           <div className="w-full border-0 rounded-md overflow-hidden h-[250px]">
             <img src={aiAssistant} alt="" className="w-full h-full" />
           </div>
@@ -50,7 +50,7 @@ const Projects = () => {
           </div>
         </div>
         {/* right */}
-        <div className="w-[80%] lg:w-[40%] border-2 border-purple-600 rounded-md p-2 flex flex-col justify-start items-start gap-5 hover:scale-105 transition-all duration-500 mb-10">
+        <div className="w-[90%] lg:w-[40%] border-2 border-purple-600 rounded-md p-2 flex flex-col justify-start items-start gap-5 hover:scale-105 transition-all duration-500 mb-10">
           <div className="w-full border-0 rounded-md overflow-hidden h-[250px]">
             <img src={textin} alt="" className="w-full h-full" />
           </div>
