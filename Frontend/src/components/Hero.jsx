@@ -19,7 +19,7 @@ const Hero = () => {
         </h1>
         <p className="text-center text-lg text-white lg:max-w-2/4 w-[60%]">
           I’m a MERN Stack Developer focused on building modern, real-time web
-          applications with clean and scalable architectures
+          applications with clean and scalable architectures.
         </p>
         <div className="flex items-center justify-center">
           <a

@@ -17,10 +17,10 @@ const About = () => {
           </div>
           <div className="w-[70%] flex flex-col gap-5">
             <p className="text-white text-md font-semibold text-start">
-              I’m a MERN Stack Developer focused on building modern, real-time
-              web applications with clean and scalable architectures. I love
-              transforming ideas into fully functional products using efficient,
-              maintainable codebases. <br />
+              I’m a full-stack web developer in the making, focused on building
+              fast, functional, and user-centric applications using the MERN
+              stack. I love transforming ideas into fully functional products
+              using efficient, maintainable codebases. <br />
               Fun fact: I enjoy debugging and optimizing code just as much as
               writing new features!
             </p>
