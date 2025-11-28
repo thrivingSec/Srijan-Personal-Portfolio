@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="flex items-center justify-center">
           <a
             className="mt-2 mb-2 px-5 py-3 border-2 border-purple-600 hover:border-0 hover:bg-linear-to-r  hover:from-[#1717be] hover:to-[#b910b9] rounded-full text-white text-lg transition-all duration-500 cursor-pointer"
-            href="https://drive.google.com/file/d/1zDPstzt_-23_9tf08v5yrfiUooWRlIRU/view?usp=sharing"
+            href="https://drive.google.com/file/d/1oQySqI4K3-b2Lggshcz6UrTaVAfeRRiD/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
