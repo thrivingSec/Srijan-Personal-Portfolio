@@ -6,23 +6,24 @@ const ServicesSection = () => {
     {
       title: "Full-Stack Web Development",
       icon: <Layers size={32} />,
-      desc: "End-to-end MERN applications with secure auth, scalable APIs, and clean architecture.",
+      desc: "End-to-end Next.js | MERN applications with secure auth, scalable APIs, and clean architecture.",
       points: [
         "MERN stack applications",
+        "Next.js application",
+        "Typescript",
         "JWT authentication",
         "Responsive UI",
         "Deployments (Vercel/Render)",
       ],
     },
     {
-      title: "Real-Time App Development",
-      icon: <Rocket size={32} />,
-      desc: "High-performance real-time features using WebSockets and Socket.IO.",
+      title: "LLM Orchestration",
+      icon: <Code size={32} />,
+      desc: " Architecting intelligent agents using LangChain and Vector Databases",
       points: [
-        "Live chat systems",
-        "Online user tracking",
-        "Typing indicators",
-        "Event-based architecture",
+        "AI powered SAAS",
+        "Multi model support systems",
+        "Vector DB at scale",
       ],
     },
     {
@@ -31,7 +32,7 @@ const ServicesSection = () => {
       desc: "Secure REST APIs with efficient routing, validation, and database structures.",
       points: [
         "Node.js + Express",
-        "MongoDB/Mongoose",
+        "MongoDB/Mongoose | Supabase/Prisma",
         "API rate limiting",
         "Error-handling & best practices",
       ],

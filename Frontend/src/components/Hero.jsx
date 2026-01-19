@@ -15,11 +15,11 @@ const Hero = () => {
           <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9] lg:animate-pulse">
             I'm Srijan
           </span>
-          , MERN Stack developer based in India.
+          , Full Stack Developer based in India.
         </h1>
         <p className="text-center text-lg text-white lg:max-w-2/4 w-[60%]">
-          I’m a MERN Stack Developer focused on building modern, real-time web
-          applications with clean and scalable architectures.
+          I’m a Full-Stack Developer focused on building modern, real-time, AI
+          powered production ready systems with clean and scalable architectures
         </p>
         <div className="flex items-center justify-center">
           <a

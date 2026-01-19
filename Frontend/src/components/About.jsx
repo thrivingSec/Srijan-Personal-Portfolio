@@ -17,25 +17,43 @@ const About = () => {
           </div>
           <div className="w-[70%] flex flex-col gap-5">
             <p className="text-white text-md font-semibold text-start">
-              I’m a full-stack web developer in the making, focused on building
-              fast, functional, and user-centric applications using the MERN
-              stack. I love transforming ideas into fully functional products
-              using efficient, maintainable codebases. <br />
+              I’m a full-stack web developer, focused on building intelligent AI
+              systems and scalable SAAS applications using the Nextjs | MERN
+              stack. My focus is on bridging the gap between robust Full Stack
+              engineering and modern AI capabilities. I believe in First
+              Principle Thinking—understanding the "why" before writing the
+              code.
+              <br />
               Fun fact: I enjoy debugging and optimizing code just as much as
               writing new features!
             </p>
             <div className="flex flex-col justify-start items-start gap-5">
               {/* Languages */}
-              <SkillRow title={"Languages"} items={["Javascript", "Python"]} />
-              {/* Frontend */}
               <SkillRow
-                title={"Frontend"}
-                items={["React", "HTML", "CSS", "Tailwind", "Redux", "Axios"]}
+                title={"Core"}
+                items={[
+                  "Javascript",
+                  "TypeScript",
+                  "Next.js",
+                  "React.js",
+                  "Node.js",
+                  "Express.js",
+                  "Mongoose",
+                  "Prisma",
+                  "NextAuth",
+                  "Redis",
+                  "Upstash",
+                ]}
               />
-              {/* backend */}
+              {/* Databases */}
               <SkillRow
-                title={"Backend"}
-                items={["Node.js", "Express.js", "MongoDB", "Mongoose"]}
+                title={"Database"}
+                items={["Mongodb", "PostgressSQL", "Supabase"]}
+              />
+              {/* LLM Orchestration */}
+              <SkillRow
+                title={"LLM Orchestration"}
+                items={["Langchain", "Langgraph", "RAG", "VectorDB"]}
               />
               {/* others */}
               <SkillRow title={"Others"} items={["Git", "GitHub", "Postman"]} />
