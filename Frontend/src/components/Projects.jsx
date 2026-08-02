@@ -1,164 +1,151 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { ExternalLink } from "lucide-react";
 import aiAssistant from "../assets/AIVirtualAssistant.png";
 import textin from "../assets/Textin.png";
-import lcel from "../assets/LCEL.png";
-import nextAuth from "../assets/Next-Auth-System.png";
-import { FaGithub } from "react-icons/fa";
+import talkToYourDocs from "../assets/TalkToYourDocs.png";
+import sociaBackend from "../assets/socialbackend.png";
+
+const projects = [
+  {
+    id: "SocialBackend",
+    title: "Social Backend",
+    image: sociaBackend,
+    description:
+      "A backend platform for a social application, built as a collection of Node.js microservices. An API Gateway is the single entry point; it handles authentication, rate limiting, and request routing to dedicated services for identity, posts, media, search, and email utilities.",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "Redis",
+      "Docker",
+      "MongoDB",
+      "RabbitMQ",
+      "Microservices",
+      "RESTful APIs",
+    ],
+    githubUrl: "https://github.com/thrivingSec/SocialMicroservicesBackend",
+  },
+  {
+    id: "TalktoYourDocs",
+    title: "TalkToYourDocs",
+    image: talkToYourDocs,
+    description:
+      "An end‑to‑end agentic Retrieval‑Augmented Generation (RAG) system built on Next.js App Router, LangGraph, Google Gemini (chat + embeddings), MongoDB vector search, and Upstash Redis.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Redis",
+      "Tailwind",
+      "LangChain",
+      "Langgraph",
+      "RAG",
+      "Gemini",
+    ],
+    githubUrl: "https://github.com/thrivingSec/TalkToYourDocs",
+  },
+  {
+    id: "ai-assistant",
+    title: "AI Virtual Assistant",
+    image: aiAssistant,
+    description:
+      "A smart, general-purpose AI assistant powered by Gemini, featuring secure authentication, customizable persona, voice activation, and intelligent conversation history.",
+    tags: ["React", "Redux", "Node.js", "MongoDB", "Gemini API", "MERN"],
+    githubUrl: "https://github.com/thrivingSec/AI_Virtual_Assistant",
+  },
+  {
+    id: "textin",
+    title: "Textin — Real-time Chat",
+    image: textin,
+    description:
+      "A full-stack real-time chat application with secure authentication, user connections, and instant messaging. Built for scalability with modular, clean architecture.",
+    tags: ["React", "Redux", "Socket.IO", "Node.js", "MongoDB", "MERN"],
+    githubUrl: "https://github.com/thrivingSec/Textin",
+  },
+];
+
+function ProjectCard({ project }) {
+  return (
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-purple-500/30 bg-gray-900/50 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-purple-500/60 hover:shadow-purple-700/25">
+      <div className="relative aspect-video overflow-hidden">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-gray-950/80 via-gray-950/20 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
+      </div>
+
+      <div className="flex flex-1 flex-col gap-4 p-6">
+        <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+
+        <p className="flex-1 text-sm leading-relaxed text-gray-300 line-clamp-3">
+          {project.description}
+        </p>
+
+        <div className="flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-gray-700 bg-gray-800/60 px-2.5 py-1 text-xs font-medium text-gray-300 transition-colors duration-300 group-hover:border-purple-500/40"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div className="flex flex-wrap items-center gap-3 pt-2">
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-[#1717be] to-[#b910b9] px-5 py-2.5 text-sm font-medium text-white transition-opacity duration-300 hover:opacity-90"
+          >
+            <FaGithub className="size-4" />
+            <span>Source Code</span>
+          </a>
+
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-purple-500/50 px-5 py-2.5 text-sm font-medium text-purple-300 transition-colors duration-300 hover:border-purple-400 hover:bg-purple-500/10"
+            >
+              <ExternalLink className="size-4" />
+              <span>Live Demo</span>
+            </a>
+          )}
+        </div>
+      </div>
+    </article>
+  );
+}
 
 const Projects = () => {
   return (
-    <div
-      className="w-full flex flex-col items-center justify-center mt-20 overflow-hidden "
+    <section
+      className="flex w-full flex-col items-center justify-center py-20"
       id="projects"
     >
-      <h1 className="text-4xl lg:text-6xl text-white font-medium text-center">
-        Major Projects
-      </h1>
-      <div className="w-[90%] lg:max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 mt-15 place-items-center place-content-stretch gap-2">
-        <div className="w-full lg:max-w-lg border-2 border-purple-600 rounded-md p-2 flex flex-col justify-start items-start gap-5 hover:scale-105 transition-all duration-500 mb-10">
-          <div className="w-full border-0 rounded-md overflow-hidden h-[250px]">
-            <img src={lcel} alt="" className="w-full h-full" />
-          </div>
-          <div className="w-full text-white text-sm font-medium">
-            A full-stack Retrieval Augmented Generation (RAG) application with
-            intelligent routing that combines web search capabilities with a
-            local knowledge base. Built with LangChain Expression Language
-            (LCEL), this project demonstrates advanced tool calling patterns for
-            AI-powered question answering.
-          </div>
-          <div className="w-full text-white text-sm font-medium flex flex-col items-start justify-start">
-            <p>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9]">
-                Frontend:
-              </span>{" "}
-              Next.js, Tailwind, Axios, Shadcn
-            </p>
-            <p>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9]">
-                Backend:
-              </span>{" "}
-              Node, Express, Langchain, Gemini, OpenAI, Groq, RAG
-            </p>
-          </div>
-          <div className=" items-center justify-center">
-            <a
-              className="mt-2 px-5 py-3 bg-linear-to-r  from-[#1717be] to-[#b910b9] rounded-full text-white text-md font-medium flex gap-2 cursor-pointer"
-              href={"https://github.com/thrivingSec/Tool-Calling-Light-RAG"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>Github</span> <FaGithub className="inline-block size-5" />
-            </a>
-          </div>
+      <div className="mx-auto flex w-[90%] max-w-7xl flex-col items-center gap-12">
+        <div className="flex flex-col items-center gap-3 text-center">
+          <h2 className="text-4xl font-semibold text-white lg:text-6xl">
+            Major Projects
+          </h2>
+          <p className="max-w-2xl text-sm font-medium text-gray-400 lg:text-base">
+            Selected work spanning AI systems, authentication, and full-stack
+            applications.
+          </p>
         </div>
-        <div className="w-full lg:max-w-lg border-2 border-purple-600 rounded-md p-2 flex flex-col justify-start items-start gap-5 hover:scale-105 transition-all duration-500 mb-10">
-          <div className="w-full border-0 rounded-md overflow-hidden h-[250px]">
-            <img src={nextAuth} alt="" className="w-full h-full" />
-          </div>
-          <div className="w-full text-white text-sm font-medium">
-            A production-ready, scalable authentication system built with
-            Next.js, NextAuth.js, Redis, Prisma, and Supabase. This project
-            demonstrates modern authentication patterns with email verification,
-            password reset, and secure session management.
-          </div>
-          <div className="w-full text-white text-sm font-medium flex flex-col items-start justify-start">
-            <p>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9]">
-                Frontend:
-              </span>{" "}
-              Next.js(App Router), Tailwind, Axios, Shandcn
-            </p>
-            <p>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9]">
-                Backend:
-              </span>{" "}
-              Next.js(API), NextAuth, Supabase, Prisma, Nodemailer, Redis,
-              Upstash
-            </p>
-          </div>
-          <div className=" items-center justify-center">
-            <a
-              className="mt-2 px-5 py-3 bg-linear-to-r  from-[#1717be] to-[#b910b9] rounded-full text-white text-md font-medium flex gap-2 cursor-pointer"
-              href={"https://github.com/thrivingSec/next-auth-system"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>Github</span> <FaGithub className="inline-block size-5" />
-            </a>
-          </div>
-        </div>
-        <div className="w-full lg:max-w-lg border-2 border-purple-600 rounded-md p-2 flex flex-col justify-start items-start gap-5 hover:scale-105 transition-all duration-500 mb-10">
-          <div className="w-full border-0 rounded-md overflow-hidden h-[250px]">
-            <img src={aiAssistant} alt="" className="w-full h-full" />
-          </div>
-          <div className="w-full text-white text-sm font-medium">
-            A smart, general-purpose AI assistant built with the MERN stack,
-            powered by the Gemini LLM, featuring secure authentication,
-            customizable assistant persona, voice-based activation, and
-            intelligent conversation history management.
-          </div>
-          <div className="w-full text-white text-sm font-medium flex flex-col items-start justify-start">
-            <p>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9]">
-                Frontend:
-              </span>{" "}
-              React, Tailwind, Axios, Redux
-            </p>
-            <p>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9]">
-                Backend:
-              </span>{" "}
-              Node, Express, MongoDB, Gemini API, Nodemailer
-            </p>
-          </div>
-          <div className="flex items-center justify-center">
-            <a
-              className="mt-2 px-5 py-3 bg-linear-to-r  from-[#1717be] to-[#b910b9] rounded-full text-white text-md font-medium flex gap-2 cursor-pointer"
-              href={"https://github.com/thrivingSec/AI_Virtual_Assistant"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>Github</span> <FaGithub className="inline-block size-5" />
-            </a>
-          </div>
-        </div>
-        <div className="w-full lg:max-w-lg border-2 border-purple-600 rounded-md p-2 flex flex-col justify-start items-start gap-5 hover:scale-105 transition-all duration-500 mb-10">
-          <div className="w-full border-0 rounded-md overflow-hidden h-[250px]">
-            <img src={textin} alt="" className="w-full h-full" />
-          </div>
-          <div className="w-full text-white text-sm font-medium">
-            Textin is a full-stack real-time chat application built with the
-            MERN stack and Socket.IO, featuring secure authentication, user
-            connections, and instant messaging. Designed with scalability,
-            modularity, and clean code architecture in mind.
-          </div>
-          <div className="w-full text-white text-sm font-medium flex flex-col items-start justify-start">
-            <p>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9]">
-                Frontend:
-              </span>{" "}
-              React, Tailwind, Axios, Redux
-            </p>
-            <p>
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9]">
-                Backend:
-              </span>{" "}
-              Node, Express, MongoDB, Socket.IO, Nodemailer
-            </p>
-          </div>
-          <div className=" items-center justify-center">
-            <a
-              className="mt-2 px-5 py-3 bg-linear-to-r  from-[#1717be] to-[#b910b9] rounded-full text-white text-md font-medium flex gap-2 cursor-pointer"
-              href={"https://github.com/thrivingSec/Textin"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>Github</span> <FaGithub className="inline-block size-5" />
-            </a>
-          </div>
+
+        <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2 2xl:grid-cols-3">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

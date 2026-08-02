@@ -19,12 +19,13 @@ const Hero = () => {
         </h1>
         <p className="text-center text-lg text-white lg:max-w-2/4 w-[60%]">
           I’m a Full-Stack Developer focused on building modern, real-time, AI
-          powered production ready systems with clean and scalable architectures
+          powered production ready systems with clean and scalable
+          architectures.
         </p>
         <div className="flex items-center justify-center">
           <a
             className="mt-2 mb-2 px-5 py-3 border-2 border-purple-600 hover:border-0 hover:bg-linear-to-r  hover:from-[#1717be] hover:to-[#b910b9] rounded-full text-white text-lg transition-all duration-500 cursor-pointer"
-            href="https://drive.google.com/file/d/1lUDgJ5iz28_ZgVLiTPYaqn6d5gIg8jop/view?usp=sharing"
+            href="https://drive.google.com/file/d/1jD7eBu7pWn4C0-26Gqwd32WKEXHvuhJs/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
