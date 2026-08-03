@@ -43,6 +43,7 @@ const projects = [
       "Gemini",
     ],
     githubUrl: "https://github.com/thrivingSec/TalkToYourDocs",
+    liveUrl: "https://talk-to-your-docs-seven.vercel.app/",
   },
   {
     id: "ai-assistant",

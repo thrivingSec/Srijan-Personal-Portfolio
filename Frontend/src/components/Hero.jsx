@@ -15,7 +15,7 @@ const Hero = () => {
           <span className="text-transparent bg-clip-text bg-linear-to-r from-[#1717be] to-[#b910b9] lg:animate-pulse">
             I'm Srijan
           </span>
-          , Full Stack Developer based in India.
+          , Full Stack Developer based in Delhi, India.
         </h1>
         <p className="text-center text-lg text-white lg:max-w-2/4 w-[60%]">
           I’m a Full-Stack Developer focused on building modern, real-time, AI
